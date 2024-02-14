@@ -1,0 +1,77 @@
+@import "../../variable.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  max-width: 345px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.skill {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  background: var(--color-primary);
+  padding: 8px 18px;
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: var(--color-primary);
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-radius: 50px;
+  background: var(--color-secondary);
+  padding: 8px 22px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
